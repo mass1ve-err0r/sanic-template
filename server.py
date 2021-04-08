@@ -26,7 +26,6 @@ J2Env.globals["url_for"] = app.url_for
 app.ctx.J2Env = J2Env
 
 
-# -*- MongoDB Setup -*-
 @app.listener('before_server_start')
 async def preflight(app, loop):
     print("executed before server start")
